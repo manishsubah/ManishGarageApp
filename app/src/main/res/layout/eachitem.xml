@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D1CDCD"
+    android:layout_margin="1dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:elevation="15dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageCar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/electriccar" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/carmake"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:text="Car Make"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/carmodel"
+            android:layout_margin="5dp"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:text="Car Model"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/carimage"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#219BEA"
+            android:text="Add Car Image"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/deletecar"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#EA7B73"
+        android:text="Delete Car"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+         />
+
+
+
+
+</LinearLayout>
